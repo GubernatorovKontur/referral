@@ -37,18 +37,26 @@ body::before {
 .logo-container {
   text-align: center;
   margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
-.logo {
-  max-width: 200px;
-  height: auto;
+.logo-text {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.logo-container svg {
   filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.2));
 }
 
 /* Стили для панелей */
 .left-panel,
 .main-window,
-.backup-window {
+a {
   background: rgba(255, 255, 255, 0.95);
   border-radius: 16px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
@@ -269,6 +277,7 @@ h2 {
   display: flex;
   gap: 15px;
   margin-bottom: 20px;
+  flex-wrap: wrap;
 }
 
 .backup-window button {
