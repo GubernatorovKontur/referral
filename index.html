@@ -12,7 +12,11 @@
         <!-- Левая панель с данными клиента -->
         <div class="left-panel">
             <div class="logo-container">
-                <img src="logo.png" alt="Логотип" class="logo">
+                <svg width="50" height="50" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="50" height="50" fill="#FF0000"/>
+                    <text x="50%" y="50%" font-family="Roboto, Arial, sans-serif" font-size="30" fill="white" text-anchor="middle" dominant-baseline="middle">Р</text>
+                </svg>
+                <div class="logo-text">Реферальная программа</div>
             </div>
             <h1>Данные клиента</h1>
             <div class="form-group">
@@ -42,12 +46,13 @@
             <div class="button-group">
                 <button id="copy-log-btn">Скопировать лог</button>
                 <button id="clear-log-btn">Очистить лог</button>
+                <button id="copy-email-btn">Письмо для реф программы</button>
             </div>
             <textarea id="log" readonly></textarea>
             <h2>История выборов</h2>
             <ul id="history-list"></ul>
             <div class="author-info">
-                <p>Инструмент подготовлен [Ваше имя]</p>
+                <p>Инструмент подготовлен <a href="https://staff.skbkontur.ru/profile/gubernatorov" target="_blank">Губернаторовым Данилой Алексеевичем</a></p>
             </div>
         </div>
     </div>
