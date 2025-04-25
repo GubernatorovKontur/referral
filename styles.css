@@ -56,7 +56,7 @@ body::before {
 /* Стили для панелей */
 .left-panel,
 .main-window,
-a {
+.backup-window {
   background: rgba(255, 255, 255, 0.95);
   border-radius: 16px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
@@ -92,6 +92,7 @@ a {
   width: 25%;
   min-width: 250px;
   flex: 1;
+  background: rgba(255, 255, 255, 0.95) !important;
 }
 
 /* Стили для форм */
@@ -218,7 +219,7 @@ h2 {
 
 /* Стили для лога и истории */
 #log {
-  min-height: 200px;
+  height: 200px;
   border: 2px solid rgba(255, 0, 0, 0.2);
   border-radius: 8px;
   padding: 15px;
@@ -227,19 +228,19 @@ h2 {
   line-height: 1.5;
   background: rgba(255, 255, 255, 0.9);
   color: #000000;
-  flex-grow: 1;
+  flex-grow: 0;
   resize: none;
 }
 
 #history-list {
+  height: 200px;
   list-style: none;
   padding: 0;
-  max-height: 200px;
   overflow-y: auto;
   border: 2px solid rgba(255, 0, 0, 0.2);
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.9);
-  flex-grow: 1;
+  flex-grow: 0;
 }
 
 #history-list li {
@@ -278,6 +279,7 @@ h2 {
   gap: 15px;
   margin-bottom: 20px;
   flex-wrap: wrap;
+  min-height: 50px;
 }
 
 .backup-window button {
@@ -354,7 +356,7 @@ h2 {
 
 /* Стили для информации об авторе */
 .author-info {
-  margin-top: 20px;
+  margin-top: 30px;
   padding-top: 10px;
   border-top: 1px solid #eee;
   font-size: 0.9em;
